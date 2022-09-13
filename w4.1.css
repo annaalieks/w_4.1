@@ -1,0 +1,182 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat";
+  margin: 0;
+  font-size: 16px;
+  max-width: 320px;
+  margin: auto;
+}
+
+.desctop {
+    display: none;
+}
+
+/*
+==========================================
+Top Philisophy Section Part
+==========================================
+*/
+
+  .text {
+    margin-bottom: 26px;
+  }
+  
+  .philosophy h2 {
+    font-family: "Quattrocento";
+    font-size: 40px;
+    font-weight: 300;
+    margin: auto;
+    width: 250px;
+    text-align: center;
+  }
+
+  h2 sup {
+    font-family: "Montserrat";
+    font-size: 14px;
+  }
+  
+  span.stylization {
+    color: #71870E;
+  }
+  
+  h2 em {
+    font-weight: 500;
+  }
+
+  .text .container {
+    padding: 26px 0 51px;
+  }
+  
+  .philosophy p {
+    margin: 0 10px;
+    line-height: 28px;
+  }
+  
+  .philosophy a {
+    color: #CD9A3D;
+    text-decoration: none;
+    float: right;
+    padding-right: 10px;
+  }
+
+  .clearfix:before,
+  .clearfix:after {
+    content: "";
+    display: table;
+  }
+
+  .clearfix:after {
+    clear: both;
+  }
+
+  .clearfix {
+    clear: both;
+    *zoom: 1;
+  }
+  
+  a img {
+    padding-right: 31px;
+  }
+
+/*
+==========================================
+Bottom Philisophy Section Part
+==========================================
+*/
+
+  figure {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    height: 573px;
+  }
+
+  .top-image {
+    position: absolute;
+    top: 278px;
+    left: 132px;
+  }
+
+  @media screen and (min-width: 768px) {
+
+    body {
+        max-width: none;
+    }
+
+/*
+==========================================
+Left Philisophy Section Part
+==========================================
+*/
+  
+    .desctop {
+        display: block;
+    }
+
+    h2 .desctop {
+        display: inline;
+        text-align: left;
+    }
+
+    figcaption {
+        padding-top: 75px;
+        padding-left: 25%;
+        color: #71870E;
+    }
+
+    .philosophy {
+        display: flex;
+        align-items: center;
+        margin: 200px auto 220px;
+        width: 100%;
+    }   
+    
+    .philosophy h2 {
+        width: 380px;
+    }
+
+    .text {
+        width: 50%;
+    }
+
+    .text .container {
+        padding: 100px 0 70px 45%;
+    }
+
+    .philosophy p {
+        margin: 0;
+        min-width: 200px;
+      }
+
+    .philosophy a {
+        float: none;
+        padding: 0;
+    }  
+
+    a img {
+        padding-left: 25%;
+    }
+
+/*
+==========================================
+Right Philisophy Section Part
+==========================================
+*/   
+
+    figure {
+        margin-left: 7%;
+        overflow: visible;
+    }
+
+    .top-image {
+        top: 208px;
+        left: 343px;
+    }
+  }
