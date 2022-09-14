@@ -58,6 +58,10 @@ Top Philisophy Section Part
     margin: 0 10px;
     line-height: 28px;
   }
+
+  .upper-paragraph {
+    padding-bottom: 20px;
+  }
   
   .philosophy a {
     color: #CD9A3D;
