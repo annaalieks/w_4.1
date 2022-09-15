@@ -1,3 +1,47 @@
+@font-face {
+  font-family: "Trade Gothic LT Extended";
+  src:  url("fonts/Trade Gothic LT Extended.woff2") format("woff2"),
+        url("fonts/Trade Gothic LT Extended.woff") format("woff"),
+        url("fonts/Trade Gothic LT Extended.otf") format("opentype"),
+        url("fonts/Trade Gothic LT Extended.ttf") format("truetype");
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  font-display: fallback;      
+}
+
+@font-face {
+  font-family: "Ogg";
+  src:  url("fonts/OggLight.woff2") format("woff2"),
+        url("fonts/OggLight.woff") format("woff"),
+        url("fonts/OggLight.otf") format("opentype"),
+        url("fonts/OggLight.ttf") format("truetype");
+  font-weight: 300;
+  font-display: fallback; 
+}
+
+@font-face {
+  font-family: "Ogg";
+  src:  url("fonts/OggLightItalic.woff2") format("woff2"),
+        url("fonts/OggLightItalic.woff") format("woff"),
+        url("fonts/OggLightItalic.otf") format("opentype"),
+        url("fonts/OggLightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: fallback; 
+}
+
+@font-face {
+  font-family: "Ogg";
+  src:  url("fonts/OggMediumItalic.woff2") format("woff2"),
+        url("fonts/OggMediumItalic.woff") format("woff"),
+        url("fonts/OggMediumItalic.otf") format("opentype"),
+        url("OggMediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: fallback; 
+}
+
 *,
 *:before,
 *:after {
@@ -7,7 +51,7 @@
 }
 
 body {
-  font-family: "Montserrat";
+  font-family: "Trade Gothic LT Extended", system-ui;
   margin: 0;
   font-size: 16px;
   max-width: 320px;
@@ -29,25 +73,17 @@ Top Philisophy Section Part
   }
   
   .philosophy h2 {
-    font-family: "Quattrocento";
+    font-family: "Ogg", system-ui;
     font-size: 40px;
+    line-height: 44px;
     font-weight: 300;
+    max-width: 250px;
     margin: auto;
-    width: 250px;
     text-align: center;
-  }
-
-  h2 sup {
-    font-family: "Montserrat";
-    font-size: 14px;
   }
   
   span.stylization {
     color: #71870E;
-  }
-  
-  h2 em {
-    font-weight: 500;
   }
 
   .text .container {
@@ -57,6 +93,7 @@ Top Philisophy Section Part
   .philosophy p {
     margin: 0 10px;
     line-height: 28px;
+    opacity: 0.85;
   }
 
   .upper-paragraph {
@@ -124,15 +161,20 @@ Left Philisophy Section Part
         display: block;
     }
 
-    h2 .desctop {
+    sup.desctop {
         display: inline;
         text-align: left;
+        font-family: "Trade Gothic LT Extended", system-ui;
+        font-size: 14px;
+        opacity: 0.55;
+        line-height: 21px;
     }
 
     figcaption {
         padding-top: 75px;
         padding-left: 25%;
         color: #71870E;
+        opacity: 0.8;
     }
 
     .philosophy {
@@ -143,7 +185,15 @@ Left Philisophy Section Part
     }   
     
     .philosophy h2 {
-        width: 380px;
+        max-width: 510px;
+        font-size: 60px;
+        line-height: 64px;
+        text-align: left;
+        padding-top: 150px;
+    }
+
+    h2 em {
+      font-weight: 500;
     }
 
     .text {
@@ -157,6 +207,7 @@ Left Philisophy Section Part
     .philosophy p {
         margin: 0;
         min-width: 200px;
+        max-width: 396px;
       }
 
     .philosophy a {
